@@ -4,8 +4,8 @@ services:
   rabbitmq-backup:
     build:
       context: .
-#    volumes:
-#      - /data/GC/rabbitmq-logs/logs:/app/rabbitmq-logs
+    volumes:
+      - /data/GC/rabbitmq-logs/logs:/app/rabbitmq-logs
     restart: always
     container_name: rabbitmq-backup
     ports:

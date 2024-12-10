@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class MonitoringListener {
     private final Logger logger = LoggerFactory.getLogger(MonitoringListener.class);
-    private static final String QUEUE_NAME = "q.weather.metar.kac.apr";
+    private static final String QUEUE_NAME = "q.total.kac.monitor2";
 
     @RabbitListener(queues = QUEUE_NAME)
     public void processInvoice(String message) {
