@@ -1,0 +1,134 @@
+10:28:16.873 [main] INFO  c.k.r.RabbitmqBackupApplication - Starting RabbitmqBackupApplication using Java 17.0.8 with PID 97636 (C:\develop\uam\rabbitmq-backup\build\classes\java\main started by 무인항공기술부 in C:\develop\uam\rabbitmq-backup)
+10:28:16.876 [main] INFO  c.k.r.RabbitmqBackupApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:16.927 [main] INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file C:\develop\uam\rabbitmq-backup\compose.yaml
+10:28:19.915 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Network rabbitmq-backup_default  Creating
+10:28:20.187 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Network rabbitmq-backup_default  Created
+10:28:20.188 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Creating
+10:28:20.746 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Created
+10:28:20.757 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Starting
+10:28:23.458 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Started
+10:28:23.458 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Waiting
+10:28:23.977 [OutputReader-stderr] INFO  o.s.b.docker.compose.core.DockerCli -  Container rabbitmq-backup-rabbitmq-1  Healthy
+10:28:40.974 [main] INFO  c.k.r.RabbitmqBackupApplication - Starting RabbitmqBackupApplication using Java 17.0.8 with PID 89500 (C:\develop\uam\rabbitmq-backup\build\classes\java\main started by 무인항공기술부 in C:\develop\uam\rabbitmq-backup)
+10:28:40.976 [main] INFO  c.k.r.RabbitmqBackupApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:41.020 [main] INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file C:\develop\uam\rabbitmq-backup\compose.yaml
+10:28:42.618 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.boot.docker.compose.core.ProcessExitException: 'docker compose --file C:\develop\uam\rabbitmq-backup\compose.yaml --ansi never config --format=json' failed with exit code 15.
+
+Stdout:
+
+
+Stderr:
+empty compose file
+
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:97)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:77)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.hasDefinedServices(DefaultDockerCompose.java:91)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:115)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:416)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.kac.rabbitmqbackup.RabbitmqBackupApplication.main(RabbitmqBackupApplication.java:10)
+10:29:05.138 [main] INFO  c.k.r.RabbitmqBackupApplication - Starting RabbitmqBackupApplication using Java 17.0.8 with PID 91188 (C:\develop\uam\rabbitmq-backup\build\classes\java\main started by 무인항공기술부 in C:\develop\uam\rabbitmq-backup)
+10:29:05.141 [main] INFO  c.k.r.RabbitmqBackupApplication - No active profile set, falling back to 1 default profile: "default"
+10:29:05.193 [main] INFO  o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file C:\develop\uam\rabbitmq-backup\compose.yaml
+10:29:07.011 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.boot.docker.compose.core.ProcessExitException: 'docker compose --file C:\develop\uam\rabbitmq-backup\compose.yaml --ansi never config --format=json' failed with exit code 15.
+
+Stdout:
+
+
+Stderr:
+empty compose file
+
+	at org.springframework.boot.docker.compose.core.ProcessRunner.run(ProcessRunner.java:97)
+	at org.springframework.boot.docker.compose.core.DockerCli.run(DockerCli.java:77)
+	at org.springframework.boot.docker.compose.core.DefaultDockerCompose.hasDefinedServices(DefaultDockerCompose.java:91)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeLifecycleManager.start(DockerComposeLifecycleManager.java:115)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:53)
+	at org.springframework.boot.docker.compose.lifecycle.DockerComposeListener.onApplicationEvent(DockerComposeListener.java:35)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:98)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$4(SpringApplicationRunListeners.java:72)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:72)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:416)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.kac.rabbitmqbackup.RabbitmqBackupApplication.main(RabbitmqBackupApplication.java:10)
+10:30:22.527 [main] INFO  c.k.r.RabbitmqBackupApplication - Starting RabbitmqBackupApplication using Java 17.0.8 with PID 95036 (C:\develop\uam\rabbitmq-backup\build\classes\java\main started by 무인항공기술부 in C:\develop\uam\rabbitmq-backup)
+10:30:22.529 [main] INFO  c.k.r.RabbitmqBackupApplication - No active profile set, falling back to 1 default profile: "default"
+10:30:23.441 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: ti.teamdream.kr:45672
+10:30:23.556 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#26a262d6:0/SimpleConnection@62db3891 [delegate=amqp://dreamteam@175.45.210.33:45672/vh.ebr, localPort=51403]
+10:30:23.660 [main] INFO  c.k.r.RabbitmqBackupApplication - Started RabbitmqBackupApplication in 1.63 seconds (process running for 2.526)
+10:30:23.679 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:24.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:26.955 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:28.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:30.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:32.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:34.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:36.946 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:38.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:40.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:42.946 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:44.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:46.952 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:48.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:50.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:52.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:54.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:56.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:30:58.942 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:00.955 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:02.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:04.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:06.947 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:08.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:10.946 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:12.961 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:14.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:16.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:18.947 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:20.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:22.951 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:24.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:26.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:28.948 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:30.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:32.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:34.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:36.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:38.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:40.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:42.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:44.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:46.949 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:48.948 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:50.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:52.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:54.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:56.944 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:31:58.945 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.k.r.listener.MonitoringListener - {"meanWindDirection":302,"meanWindSpeed":2.8,"airTemperature":4.8,"humidity":70,"rainDetection":0,"aerodromeHorizontalVisibility":9999,"rainfall":0.0,"qnh":1023,"aerodromeObservedClouds":0,"vertiportId":"GC1GH"}
+10:32:00.139 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.

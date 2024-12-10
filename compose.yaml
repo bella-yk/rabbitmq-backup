@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rabbitmq-backup:
+    build:
+      context: .
+#    volumes:
+#      - /data/GC/rabbitmq-logs/logs:/app/rabbitmq-logs
+    restart: always
+    container_name: rabbitmq-backup
+    ports:
+      - "20000:20000"
