@@ -5,7 +5,7 @@ services:
     build:
       context: .
     volumes:
-      - /data/GC/rabbitmq-logs/logs:/app/rabbitmq-logs
+      - /data/GC/swimti-backup/rabbitmq-logs:/app/rabbitmq-logs
     restart: always
     container_name: rabbitmq-backup
     ports:
